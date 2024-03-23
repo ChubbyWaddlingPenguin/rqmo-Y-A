@@ -1,9 +1,15 @@
+import React from 'react';
+import './HomeView.css';
 
-
-function HomeView() {
+const HomeView = () => {
   return (
-    <div>
-      HomePage
+    <div className="home-container">
+      <div className="content">
+        <h1>Game Name</h1>
+        {/* Extra stuff if needed */}
+        <button>Start Game</button>
+      </div>
+      <footer>footer things</footer>
     </div>
   );
 }
