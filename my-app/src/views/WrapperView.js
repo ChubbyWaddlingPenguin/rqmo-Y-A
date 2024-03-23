@@ -13,7 +13,6 @@ function WrapperView() {
         </div>
         <h1 className="header-title">Health Game</h1>
         <div className="header-right">
-          <button>Start Game</button>
         </div>
       </header>
       <div className="content">
@@ -21,7 +20,7 @@ function WrapperView() {
       <div className="container">
         <div className="rectangle">
           {/* The different views inside the rectangle go here, we start with HomeView*/}
-          <GameView/>
+          <HomeView/>
         </div>
       </div>
 
