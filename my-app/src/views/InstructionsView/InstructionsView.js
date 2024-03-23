@@ -31,7 +31,7 @@ const InstructionsView = () => {
         <img src={image} alt="Doc" style={{ maxWidth: '100%', maxHeight: '300px' }} />
       </div>
       <div style={{ width: '200%' }}>
-        <h2 style={{ textAlign: 'center' }}>Instructions</h2>
+        <h2 style={{ textAlign: 'center' }}></h2>
         <TextBox message={textPages[pageIndex]}/>
         <div style={{ textAlign: 'center', marginTop: '-20px', marginBottom: '25px'}}>
         <div style={{ display: 'inline-block' }}>
