@@ -1,6 +1,6 @@
 
 
-function App() {
+function HomeView() {
   return (
     <div>
       HomePage
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomeView;
