@@ -1,27 +1,13 @@
 import React from 'react';
 import './HomeView.css'; // Import your CSS file for styling
+import BestButton from '../../components/BestButton'
 
 const HomeView = () => {
   return (
-    <div className="home-container">
-      <header>
-        <div className="header-left">
-          <button>RQMO Home</button>
-          <button>Spare 1</button>
-        </div>
-        <h1 className="header-title">Project Title</h1>
-        <div className="header-right">
-          <button>Spare 2</button>
-          <button>Spare 3</button>
-        </div>
-      </header>
-      <div className="content">
-        <h2>Game Name</h2>
-        {/* Additional content goes here */}
-        <BestButton>Start Game</BestButton>
+    <div>
+        <h2>Instructions</h2>
+
       </div>
-      <footer>Footer things</footer>
-    </div>
   );
 }
 

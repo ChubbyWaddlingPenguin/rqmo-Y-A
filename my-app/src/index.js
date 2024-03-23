@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Wrapper from './views/WrapperView';
 import reportWebVitals from './reportWebVitals';
+import HomeView from './views/HomeView/HomeView';
+import WrapperView from './views/WrapperView';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Wrapper />
+    <WrapperView />
   </React.StrictMode>
 );
 
