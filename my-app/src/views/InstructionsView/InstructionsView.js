@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BestButton from '../../components/BestButton';
 import ButtonChoice from "../../components/ButtonChoice";
+import TextBox from "../../components/TextBox";
 import image from '../../assets/doctor.png';
 import previous from '../../assets/previous.png';
 import next from '../../assets/next.png';
@@ -27,22 +28,12 @@ const InstructionsView = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={{ textAlign: 'center' }}>
-        <img src={image} alt="Doc" style={{ maxWidth: '75%', maxHeight: '225px' }} />
+        <img src={image} alt="Doc" style={{ maxWidth: '100%', maxHeight: '300px' }} />
       </div>
       <div style={{ width: '200%' }}>
         <h2 style={{ textAlign: 'center' }}>Instructions</h2>
-        <textarea
-          style={{
-            width: '100%', // Adjust as needed
-            height: '50px', // Adjust as needed
-            margin: 'auto',
-            resize: 'none', // Prevent resizing
-            overflowY: 'hidden', // Hide vertical scrollbar
-          }}
-          readOnly={true} // Make the textarea read-only
-          value={textPages[pageIndex]}
-        />
-        <div style={{ textAlign: 'center', marginTop: '-20px'}}>
+        <TextBox message={textPages[pageIndex]}/>
+        <div style={{ textAlign: 'center', marginTop: '-20px', marginBottom: '25px'}}>
         <div style={{ display: 'inline-block' }}>
             <ButtonChoice src={previous} imageSize="30px" onClick={handlePreviousPage} disabled={pageIndex === 0} style={{ marginRight: '10px' }} />
           </div>
