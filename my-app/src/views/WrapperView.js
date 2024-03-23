@@ -21,7 +21,7 @@ function WrapperView() {
       <div className="container">
         <div className="rectangle">
           {/* The different views inside the rectangle go here, we start with HomeView*/}
-          <HomeView/>
+          <GameView/>
         </div>
       </div>
 

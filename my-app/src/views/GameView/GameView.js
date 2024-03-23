@@ -1,7 +1,9 @@
+import TextBox from "../../components/TextBox";
+
 function GameView() {
     return (
         <div>
-            Game View
+           <TextBox message={"This is a test"}/>
         </div>
     );
 }
