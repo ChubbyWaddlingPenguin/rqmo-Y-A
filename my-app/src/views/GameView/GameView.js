@@ -1,6 +1,8 @@
 function GameView() {
     return (
-        
+        <div>
+            Game View
+        </div>
     );
 }
 
