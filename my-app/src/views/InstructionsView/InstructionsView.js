@@ -4,6 +4,7 @@ import ButtonChoice from "../../components/ButtonChoice";
 import TextBox from "../../components/TextBox";
 import image from '../../assets/doctor.png';
 import previous from '../../assets/previous.png';
+import previous_grey from '../../assets/previous_grey.png';
 import next from '../../assets/next.png';
 
 const InstructionsView = () => {
@@ -24,6 +25,7 @@ const InstructionsView = () => {
   };
 
   const isLastPage = pageIndex === textPages.length - 1;
+  const isFirstPage = pageIndex === 0;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -34,9 +36,15 @@ const InstructionsView = () => {
         <h2 style={{ textAlign: 'center' }}></h2>
         <TextBox message={textPages[pageIndex]}/>
         <div style={{ textAlign: 'center', marginTop: '-20px', marginBottom: '25px'}}>
-        <div style={{ display: 'inline-block' }}>
-            <ButtonChoice src={previous} imageSize="30px" onClick={handlePreviousPage} disabled={pageIndex === 0} style={{ marginRight: '10px' }} />
-          </div>
+        {isFirstPage ? (
+            <div style={{ display: 'inline-block' }}>
+              <ButtonChoice src={previous_grey} imageSize="30px" onClick={handlePreviousPage} disabled={pageIndex === 0} style={{ marginRight: '10px' }} />
+            </div>
+          ) : (
+            <div style={{ display: 'inline-block' }}>
+              <ButtonChoice src={previous} imageSize="30px" onClick={handlePreviousPage} disabled={pageIndex === 0} style={{ marginRight: '10px' }} />
+            </div>
+          )}
           {isLastPage ? (
             <div style={{ display: 'inline-block' }}>
               <BestButton style={{ marginLeft: '10px' }}>Continue</BestButton>
